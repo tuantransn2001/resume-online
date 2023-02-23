@@ -1,0 +1,67 @@
+.section{
+    padding: 60px 37.5px 135px;
+    background-color: $white-1;
+}
+.section-heading{
+    @include text-style( $fs-1 , normal , $lh-1 , $gray-2 , left );
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+}
+.section-body{
+    padding-bottom: 15px;
+}
+.section-title{
+    font-family: 'Playfair Display', serif;
+    @include text-style( $fs-8 , $bold , $lh-4 , $black-1 , left );
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 72px;
+}
+.section-body-desc{
+    @include text-style( $fs-6 , normal , $lh-4 , $black-3 , left );
+    margin-bottom: 22.5px;
+}
+.section-body-desc.strong{
+    font-weight: $bold;
+}
+
+.section-button{
+    margin-bottom: 4px;
+    display: flex;
+    gap: 5px;
+    width: 100%;
+    @include button( $blue-2 , 4px , 18px , 36px , $fs-3 , normal , $lh-2 , 1px , $white-1 );
+}
+
+// Keyframe
+
+@keyframes FadeInBottom2Top{
+    from{   
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes FadeInLeft2Right{
+    from{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes FadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

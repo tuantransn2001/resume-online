@@ -1,0 +1,39 @@
+@mixin text-style( $fs , $fw , $lh , $cl , $t-a ){
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    color: $cl;   
+    text-align: $t-a; 
+}
+@mixin button( $b-bg-cl , $b-br , $pd-t-b , $pd-l-r , $b-fs , $b-fw , $b-lh , $b-l-s , $b-cl ){
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: $b-bg-cl;
+    border-radius: $b-br;
+    padding: $pd-t-b $pd-l-r ;
+    font-size: $b-fs;
+    font-weight: $b-fw;
+    line-height: $b-lh;
+    letter-spacing: $b-l-s;
+    color: $b-cl;
+}
+@mixin background($bg-color , $bg-url , $bg-repeat , $bg-size , $bg-position){
+    background-color:$bg-color;
+    background-image:$bg-url;
+    background-repeat: $bg-repeat;
+    background-size: $bg-size;
+    background-position: $bg-position;
+}
+@mixin respond($breakpoint){
+    @if $breakpoint == mobile {
+        @media (max-width: 740px){@content};
+    }
+    @if $breakpoint == tablet {
+        @media (max-width: 1023px){@content};
+    }
+    @if $breakpoint == pc {
+        @media (max-width: 1024px){@content};
+    }
+}

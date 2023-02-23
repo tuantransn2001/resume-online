@@ -1,0 +1,109 @@
+.skill{
+    .skill__process__wrapper{
+        .skill__data{
+            height: 54px;
+            .skill__name{
+                @include text-style( $fs-7 , normal , $lh-1 , $black-1 , left );
+                margin-bottom: 10px;
+            }
+
+            .skill__precesser{
+                width: inherit;
+                height: 6px;
+                border-radius: 100px;
+                background-color: $gray-1;
+                .skill__precessed{
+                    width: 75%;
+                    height: inherit;
+                    border-radius: inherit;
+                    background-color: $blue-2;
+                    position: relative;
+                }
+                .skill__precessed::before{
+                    content: "75%";
+                    position: absolute;
+                    top: -22px;
+                    right: 0;
+                    @include text-style( $fs-3 , $semi-bold , $lh-2 , $blue-2 , right );
+                }
+                .skill__precessed::after{
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 0;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: inherit;
+                }
+            }
+        }
+
+        .skill__data.jquery{
+            .skill__precesser{
+                .skill__precessed{
+                    width: 60%;
+                    background-color: $orange-1;
+                }
+                .skill__precessed::before{
+                    content: "60%";
+                    color: $orange-1;
+                }
+            }
+        }
+
+        .skill__data.html{
+            .skill__precesser{
+                .skill__precessed{
+                    width: 85%;
+                    background-color: $yellow-1;
+                }
+                .skill__precessed::before{
+                    content: "85%";
+                    color: $yellow-1;
+                }
+            }
+        }
+
+        .skill__data.css{
+            .skill__precesser{
+                .skill__precessed{
+                    width: 90%;
+                    background-color: $purple-1;
+                }
+                .skill__precessed::before{
+                    content: "90%";
+                    color: $purple-1;
+                }
+            }
+        }
+
+        .skill__data.wordpress{
+            .skill__precesser{
+                .skill__precessed{
+                    width: 70%;
+                    background-color: $green-1;
+                }
+                .skill__precessed::before{
+                    content: "70%";
+                    color: $green-1;
+                }
+            }
+        }
+
+        .skill__data.seo{
+            .skill__precesser{
+                .skill__precessed{
+                    width: 80%;
+                    background-color: $blue-3;
+                }
+                .skill__precessed::before{
+                    content: "80%";
+                    color: $blue-3;
+                }
+            }
+        }
+    }
+
+}

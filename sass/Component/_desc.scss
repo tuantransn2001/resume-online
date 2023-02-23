@@ -1,0 +1,50 @@
+@import "../Component/desc/home";
+@import "../Component/desc/about";
+@import "../Component/desc/services";
+@import "../Component/desc/skill";
+@import "../Component/desc/education";
+@import "../Component/desc/exprience";
+@import "../Component/desc/work";
+@import "../Component/desc/blog";
+@import "../Component/desc/contact";
+
+.description {
+  overflow: hidden;
+}
+
+.background {
+  // background-color: $white-1;
+  // background-image: url(#{$path}/img/background__deep.webp);
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: center;
+  @include background(
+    $white-1,
+    url(#{$path}/img/background.png),
+    no-repeat,
+    cover,
+    center
+  );
+  position: fixed;
+  top: 0;
+  left: calc(464px + 172px);
+  height: 100vh;
+  width: 877px;
+  z-index: -1;
+}
+
+@include respond(tablet) {
+  .background {
+    width: 750px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100vh;
+  }
+}
+
+@include respond(mobile) {
+  .background {
+    width: 358px;
+  }
+}

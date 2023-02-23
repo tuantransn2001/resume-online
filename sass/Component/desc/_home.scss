@@ -1,0 +1,66 @@
+.home{
+    @include background( $white-1 , url(#{$path}/img/Desc/Background/1.webp) , no-repeat , cover , center );
+    height: 979px;
+    padding: 15px;
+    transition: all ease .75s;
+    .home__data{
+        width: 405px;
+        padding: 37.5px;
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .home__title{
+            font-family: 'Playfair Display', serif;
+            @include text-style( $fs-12 , $bold , $lh-2 , $black-1 , left );
+        }
+        .home__desc{
+            @include text-style( $fs-8 , normal , $lh-3 , $black-1 , left );
+        }
+        .home__desc__button{   
+            @include button( transparent , 2px , 10px , 15px , $fs-3 , normal , $lh-1 , 2px , $black-1 );
+            text-transform: uppercase;
+            border: 2px solid $black-1;
+            .home__desc__button__icon{
+                margin-left: 4px;
+            }
+        }
+    }
+
+    
+}
+
+@include respond( tablet ){
+    .home{
+        padding: 0;
+        position: relative;
+        .home__data{
+            width: 626px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            .home__title{
+                font-size: $m-fs-1;
+                text-align: center;
+            }
+            .home__desc{
+                font-size: $fs-8;
+                text-align: center;
+            }
+            .home__desc__button{
+                height: 40px;
+                border-width: 1px;
+            }
+        }
+    }
+}
+
+@include respond(mobile){
+    .home{
+        height: 500px;
+        .home__data{
+            width: 313px;
+        }
+    }
+}

@@ -1,0 +1,181 @@
+#app {
+  padding-left: 20px;
+}
+.information {
+  width: 300px;
+  height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $bg-color;
+  transition: all ease 0.75s;
+  position: fixed;
+  top: 0;
+  left: 360px;
+  .information__toggle__button__wrapper {
+    display: none;
+  }
+  .introduce {
+    @extend .flex-vertical-center;
+    .avatar__wrapper {
+      width: 150px;
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .avatar {
+        width: 100%;
+        transition: all ease 0.25s;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+    .name {
+      font-family: "Playfair Display", serif;
+      @include text-style($fs-9, $bold, $lh-1, $black-1, center);
+    }
+    .position {
+      .postion__link {
+        color: $blue-2;
+      }
+      @include text-style($fs-3, normal, $lh-1, $black-3, center);
+      text-transform: uppercase;
+    }
+  }
+
+  .navbar {
+    @extend .flex-vertical-center;
+    .subnav {
+      transition: all ease 0.25s;
+      cursor: pointer;
+      position: relative;
+      .subnav__link {
+        display: block;
+        padding: 10px 0;
+        @include text-style($fs-3, $medium, $lh-1, $black-3, center);
+        text-transform: uppercase;
+      }
+    }
+    .subnav::after {
+      content: "";
+      position: absolute;
+      top: 75%;
+      left: 50%;
+      height: 1px;
+      width: 0;
+      background-color: $blue-2;
+      transition: all ease 0.25s;
+    }
+    .subnav:hover .subnav__link {
+      color: $blue-2;
+    }
+    .subnav:hover::after {
+      left: 0;
+      width: 100%;
+    }
+    .subnav.active {
+      .subnav__link {
+        color: $blue-2;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 1px;
+        width: 100%;
+        background-color: $blue-2;
+        transition: all ease 0.25s;
+      }
+    }
+  }
+
+  .colorlib__footer {
+    @include text-style($fs-4, normal, $lh-4, $black-2, center);
+    .colorlib__footer__link {
+      color: $blue-2;
+    }
+  }
+}
+
+@include respond(tablet) {
+  .information {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    z-index: $layer-all;
+    .information__toggle__button__wrapper {
+      width: 70px;
+      height: 70px;
+      padding: 20px;
+      background-color: transparent;
+      position: absolute;
+      z-index: 20;
+      top: 0;
+      left: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      transition: all ease 0.25s;
+      cursor: pointer;
+      .line-between {
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background-color: $black-3;
+        top: 41px;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        top: 27px;
+        width: 30px;
+        height: 2px;
+        background-color: $black-3;
+        transition: all ease 0.75s;
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background-color: $black-3;
+        transition: all ease 0.75s;
+      }
+    }
+  }
+  .information.active {
+    left: 0;
+    .information__toggle__button__wrapper {
+      &:after {
+        transform: rotate(45deg);
+      }
+      .line-between {
+        display: none;
+      }
+      &:before {
+        top: 27px;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  .information__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    z-index: $layer-4;
+    display: none;
+  }
+  .information__modal.active {
+    display: block;
+  }
+}

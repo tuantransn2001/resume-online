@@ -1,0 +1,74 @@
+.education__wrapper{
+    .education__item{
+        .education__item__title{
+            background-color: $gray-3;
+            padding: 20px 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 5px;
+            user-select: none;
+            transition: all ease .5s;
+            border-radius: $border-radius-1;
+            cursor: pointer;
+            .education__item__title__content{
+                @include text-style( $fs-5 , $medium , $lh-1 , $black-1 , left )
+            }
+            .education__item__title__icon__wrapper{
+                .education__item__title__icon{
+                    font-size: 1rem;
+                    color: $black-1;
+                }
+                .education__item__title__icon.plus{
+                    display: block;
+                }
+                .education__item__title__icon.minus{
+                    display: none;
+                }
+            }
+            .education__item__title__icon__wrapper.active{
+                .education__item__title__icon.plus{
+                    display: none;
+                }
+                .education__item__title__icon.minus{
+                    display: block;
+                }
+            }
+           
+        }
+        .education__item__title.active{
+            background-color: $blue-2;
+            .education__item__title__content{
+                color: $white-1;
+            }
+            .education__item__title__icon__wrapper{
+                .education__item__title__icon{
+                    color: $white-1;
+                }
+            }
+        }
+        .euducation__item__data{
+            margin-bottom: 5px;
+            padding: 0 24px;
+            height: 0;
+            border: none;
+            border: 1px solid transparent;
+            border-radius: $border-radius-1;
+            transition: all ease .5s;
+            .education__item__desc{
+                @include text-style( $fs-6 , normal , $lh-4 , $black-3 , left );
+                margin-bottom: 22.5px;
+                display: none;
+            }
+        }
+        .euducation__item__data.active{
+            border: 1px solid $gray-3;
+            padding: 24px;
+            height: 100%;
+            .education__item__desc{
+                display: block;
+                transition-delay: .5s;
+            }
+        }
+    }
+}

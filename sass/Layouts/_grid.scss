@@ -1,0 +1,95 @@
+.grid{
+    width: 100%;
+    display: block;
+    padding: 0;
+}
+.grid.wide{
+    width: $wide-layout;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.row.no-gutter{
+    margin-right: 0;
+    margin-left: 0;
+}
+.gutter{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.mt-gutter{
+    padding-left: 0;
+    padding-right: 0;
+}
+.c-2{
+    flex: 1 0 16.6667%;
+    max-width: 16.6667%;
+}
+.c-3{
+    flex: 1 0 25%;
+    max-width: 25%;
+}
+.c-4{
+    flex: 1 0 33.3333%;
+    max-width: 33.3333%;
+}
+.c-5{
+    flex: 1 0 41.6667%;
+    max-width: 41.6667%;
+}
+.c-6{
+    flex: 1 0 50%;
+    max-width: 50%;
+}
+.c-7{
+    flex: 1 0 58.3333%;
+    max-width: 58.3333%;
+}
+.c-8{
+    flex: 1 0 66.6667%;
+    max-width: 66.6667%; 
+}
+.c-9{
+    flex: 1 0 75%;
+    max-width: 75%;
+}
+.c-12{
+    flex: 1 0 100%;
+    max-width: 100%;
+}
+
+@include respond(tablet){
+    $wide-layout: 751px;
+    .grid.wide{
+        width: $wide-layout;
+        margin: 0 auto;
+    }
+    .m-c-0{
+        flex: 0 0 0;
+        max-width: 0;
+    }
+    .m-c-6{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .m-c-12{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@include respond(mobile){
+    $wide-layout: 360px;
+    .grid.wide{
+        width: $wide-layout;
+        margin: 0 auto;
+    }
+    .s-c-12{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

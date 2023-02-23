@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./sass/main.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/icon/fontawesome-free-5.15.4/fontawesome-free-5.15.4-web/css/all.css"
+    />
+
+    <!-- Animation CSS3 Framework -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <title>Tuấn Trần'Information</title>
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <!-- About me - Fixed to Screen -->
+    <div class="information">
+      <!-- Responsive button open/close information -->
+      <div class="information__toggle__button__wrapper">
+        <span class="line-between"></span>
+      </div>
+
+      <!-- Personal Introduce -->
+      <div class="introduce">
+        <div class="avatar__wrapper mb-8">
+          <img
+            src="./assets/img/Info/introduce/avatar.jpg"
+            alt=""
+            class="avatar"
+          />
+        </div>
+        <h1 class="name mb-4">Trần Tuấn</h1>
+        <h2 class="position mb-6">
+          <a href="#" class="postion__link">Fullstack Developer</a>&nbsp;in
+          VietNam
+        </h2>
+      </div>
+
+      <!-- Navigation Bar -->
+      <ul class="navbar mb-4">
+        <li class="subnav active">
+          <a href="#home" class="subnav__link"> Home </a>
+        </li>
+        <li class="subnav">
+          <a href="#about" class="subnav__link"> About </a>
+        </li>
+        <li class="subnav">
+          <a href="#skill" class="subnav__link"> Skills </a>
+        </li>
+        <li class="subnav">
+          <a href="#education" class="subnav__link"> Education </a>
+        </li>
+        <li class="subnav">
+          <a href="#experience" class="subnav__link"> Experience </a>
+        </li>
+        <li class="subnav">
+          <a href="#contact" class="subnav__link"> Contact </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Modal when user click show Information Fix -->
+    <div class="information__modal disable"></div>
+
+    <!-- Background - Fixed to Screen -->
+    <!-- Background Image -->
+
+    <div class="background">
+      <!-- Background Image -->
+    </div>
+
+    <div id="app" class="app grid wide">
+      <div class="row no-gutter">
+        <!-- Info -->
+        <section class="c-3 mt-gutter m-c-0 information__mt__col"></section>
+
+        <!-- Description -->
+        <section id="description" class="description c-9 mt-gutter m-c-12">
+          <!-- Home -->
+          <div id="home" class="home">
+            <div class="home__data opacity-effect">
+              <h1 class="home__title mb-4">
+                Hi!<br />
+                I'm Tuấn
+              </h1>
+              <p class="home__desc mb-8">
+                Im ready to challenges as a freelancer or fulltime
+                <!-- <a href="#" class="home__desc__link">colorlib.com</a> -->
+              </p>
+              <a href="" target="_blank" class="home__desc__button">
+                VIEW CV
+                <i
+                  class="fas fa-cloud-download-alt home__desc__button__icon"
+                ></i>
+              </a>
+            </div>
+          </div>
+          <!-- About -->
+          <div id="about" class="section about">
+            <!-- Heading -->
+            <h1 class="section-heading about__heading">ABOUT US</h1>
+
+            <h2 class="section-title about__title">WHO AM I?</h2>
+            <!-- Body -->
+            <div class="section-body about__body">
+              <p class="section-body-desc">
+                <span class="section-body-desc strong">Hi I'm Tuan Tran </span>
+                <!-- On her way she met a copy.
+                            The copy warned the Little Blind Text, that where it came from it would have been rewritten
+                            a thousand times and everything that was left from its origin would be the word "and" and
+                            the Little Blind Text should turn around and return to its own, safe country. -->
+                Im 22 years old,and im living in Hồ Chí Minh city.Im a student
+                in Nong Lam University.I love create and develop user experience
+                website.I belive with my seft-study ability and my own efforts,i
+                will do my best and succesfull assign work.I am ready to
+                challenges as freelance and fulltime developer.
+              </p>
+
+              <p class="section-body-desc">
+                <!-- Even the all-powerful Pointing has no control about the blind texts it is an almost
+                            unorthographic life One day however a small line of blind text by the name of Lorem Ipsum
+                            decided to leave for the far World of Grammar. -->
+              </p>
+            </div>
+
+            <!-- Hire -->
+            <div class="hire__banner">
+              <p class="hire__banner__data">
+                I am happy to know you <br />
+                that 5+ projects done succesfull!
+              </p>
+
+              <a href="#" class="hire__banner__btn">Hire me</a>
+            </div>
+          </div>
+
+          <!-- Services Overlay -->
+          <div class="services__overlay grid">
+            <div class="row">
+              <!-- Column 1 -->
+              <div class="c-3 m-c-12 s-c-12">
+                <div class="counter__wrapper coffee">
+                  <h1 class="counter__number">0</h1>
+
+                  <h2 class="counter__label">Cups of coffe</h2>
+                </div>
+              </div>
+
+              <!-- Column 2 -->
+              <div class="c-3 m-c-12 s-c-12">
+                <div class="counter__wrapper project">
+                  <h1 class="counter__number">5+</h1>
+
+                  <h2 class="counter__label">Projects</h2>
+                </div>
+              </div>
+
+              <!-- Column 3 -->
+              <div class="c-3 m-c-12 s-c-12">
+                <div class="counter__wrapper client">
+                  <h1 class="counter__number">0</h1>
+
+                  <h2 class="counter__label">Clients</h2>
+                </div>
+              </div>
+
+              <!-- Column 4 -->
+              <div class="c-3 m-c-12 s-c-12">
+                <div class="counter__wrapper partner">
+                  <h1 class="counter__number">0</h1>
+
+                  <h2 class="counter__label">Partner</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Skill -->
+          <div id="skill" class="section skill grid">
+            <div class="row">
+              <div class="c-12 gutter">
+                <!-- Tile -->
+                <h1 class="section-heading skill__heading">MY SPECIALTY</h1>
+
+                <!-- Title -->
+                <h2 class="section-title skill__title">MY SKILLS</h2>
+              </div>
+              <!-- Body -->
+              <div class="section-body">
+                <!-- Description -->
+                <p class="section-body-desc skill__desc">
+                  The Big Oxmox advised her not to do so, because there were
+                  thousands of bad Commas, wild Question Marks and devious
+                  Semikoli, but the Little Blind Text didn’t listen. She packed
+                  her seven versalia, put her initial into the belt and made
+                  herself on the way.
+                </p>
+
+                <!-- Process Skill -->
+                <div class="skill__process__wrapper grid">
+                  <div class="row">
+                    <!-- Photoshop -->
+                    <div class="c-6 gutter m-c-12">
+                      <div class="skill__data skill__left">
+                        <h1 class="skill__name">HTML 5 & CSS 3(SCSS)</h1>
+                        <div class="skill__precesser">
+                          <div class="skill__precessed"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Jquery -->
+                    <div class="c-6 gutter m-c-12">
+                      <div class="skill__data jquery skill__right">
+                        <h1 class="skill__name">MySQL</h1>
+                        <div class="skill__precesser">
+                          <div class="skill__precessed"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- HTML 5 -->
+                    <div class="c-6 gutter m-c-12">
+                      <div class="skill__data html skill__left">
+                        <h1 class="skill__name">JAVASCRIPT</h1>
+                        <div class="skill__precesser">
+                          <div class="skill__precessed"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- CSS 3 -->
+                    <div class="c-6 gutter m-c-12">
+                      <div class="skill__data css skill__right">
+                        <h1 class="skill__name">REACT JS</h1>
+                        <div class="skill__precesser">
+                          <div class="skill__precessed"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- WordPress -->
+                    <div class="c-6 gutter m-c-12">
+                      <div class="skill__data wordpress skill__left">
+                        <h1 class="skill__name">REACT NATIVE</h1>
+                        <div class="skill__precesser">
+                          <div class="skill__precessed"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- SEO -->
+                    <div class="c-6 gutter m-c-12">
+                      <div class="skill__data seo skill__right">
+                        <h1 class="skill__name">NODE JS</h1>
+                        <div class="skill__precesser">
+                          <div class="skill__precessed"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education -->
+          <section id="education" class="section education grid">
+            <!-- Heading -->
+            <div class="row">
+              <div class="c-12 gutter">
+                <h1 class="section-heading education__heading">EDUCATION</h1>
+
+                <!-- Title -->
+                <h2 class="section-title education__title">Education</h2>
+              </div>
+            </div>
+
+            <!-- Body -->
+            <div class="row">
+              <div class="c-12 gutter">
+                <div class="section-body">
+                  <!-- Education wrapper -->
+                  <div class="education__wrapper grid">
+                    <div class="row">
+                      <!-- Education 2 -->
+                      <div class="c-12 gutter">
+                        <div class="education__item">
+                          <div class="education__item__title active">
+                            <h1 class="education__item__title__content">
+                              JAVASCRIPT ALGORITHMS AND DATA STRUCTURES(
+                              FreeCodeCamp'Certification )
+                            </h1>
+                            <div
+                              class="education__item__title__icon__wrapper active"
+                            >
+                              <i
+                                class="fas fa-plus education__item__title__icon plus"
+                              ></i>
+                              <i
+                                class="fas fa-minus education__item__title__icon minus"
+                              ></i>
+                            </div>
+                          </div>
+
+                          <div class="euducation__item__data grid active">
+                            <div class="row">
+                              <div class="c-4 gutter">
+                                <p class="education__item__desc">
+                                  Nov 22, 2021 - February 23, 2023
+                                </p>
+                              </div>
+                              <div class="c-8 gutter">
+                                <p class="education__item__desc">
+                                  https://www.freecodecamp.org/certification/fcc6d1c3bb7-c5bc-4ee4-a41f-a30f6547e7c2/javascript-algorithms-and-data-structures
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Education 1 -->
+                      <div class="c-12 gutter">
+                        <div class="education__item">
+                          <div class="education__item__title">
+                            <h1 class="education__item__title__content">
+                              Nong Lam University
+                            </h1>
+                            <div class="education__item__title__icon__wrapper">
+                              <i
+                                class="fas fa-plus education__item__title__icon plus"
+                              ></i>
+                              <i
+                                class="fas fa-minus education__item__title__icon minus"
+                              ></i>
+                            </div>
+                          </div>
+
+                          <div class="euducation__item__data grid">
+                            <div class="row">
+                              <div class="c-6 gutter">
+                                <p class="education__item__desc">2019 - now</p>
+                              </div>
+
+                              <div class="c-6 gutter">
+                                <p class="education__item__desc">
+                                  Final years(4nd) - student
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Experience -->
+          <div id="experience" class="section experience grid">
+            <div class="row">
+              <div class="c-12 gutter">
+                <h1 class="section-heading experience__heading">EXPERIENCE</h1>
+
+                <h2 class="section-title experience__title">EXPERIENCE</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="c-12 gutter">
+                <div class="section-body">
+                  <div class="section-body-desc grid">
+                    <div class="row">
+                      <div class="c-12 gutter">
+                        <!-- Time line box -->
+                        <div class="timeline__wrapper">
+                          <!-- Time line bar - Position: relative -->
+                          <div class="timeline__bar"></div>
+                          <!-- List Experience - Position: Absolute -->
+                          <div class="timeline__data__list">
+                            <!-- Experience 1 -->
+                            <div class="timeline__data">
+                              <!-- Icon -->
+                              <div class="timeline__data__icon__wrapper">
+                                <i
+                                  class="fas fa-pencil-alt timeline__data__icon"
+                                ></i>
+                              </div>
+
+                              <!-- Title -->
+                              <div class="experience-wrapper-head">
+                                <h1 class="timeline__data__position">
+                                  E-Commerce Website(Fullstack) - lenleys Clone
+                                  <span class="timeline__data__time"
+                                    >2023 - now</span
+                                  >
+                                </h1>
+                              </div>
+
+                              <div class="experience-wrapper-section grid">
+                                <div class="row">
+                                  <div class="c-3 gutter">
+                                    <div class="project-overview-wrapper">
+                                      <ul>
+                                        <li>Jan 5,2023 - now</li>
+                                        <li>Project: Personal</li>
+                                        <li>Member: 1</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                  <div class="c-8 gutter">
+                                    <div class="project-details-wrapper">
+                                      <div class="project-detail-wrapper">
+                                        <h3>
+                                          Position: Frontend,Backend,Database
+                                          design
+                                        </h3>
+                                        <ul>
+                                          <li>
+                                            <span>
+                                              + Description: E-Commerce website
+                                              with Client-Server and MVC
+                                            </span>
+                                          </li>
+                                          <li>
+                                            <span>
+                                              + Features:
+                                              Authenticate/Authorize,Login,Register,Search
+                                              products/users,Upload file
+                                            </span>
+                                          </li>
+                                          <li>
+                                            <span>
+                                              + Source code:
+                                              https://github.com/tuantransn2001/lenleys_client-server.git
+                                            </span>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                      <div class="project-detail-wrapper">
+                                        <h3>Technical:</h3>
+                                        <ul>
+                                          <li>
+                                            <span>
+                                              +
+                                              FONT-END:REACTJS,REACT-ROUTER-DOM
+                                              V6,REDUX(ACTION-CREATOR),SCSS,STYLED-COMPONENTS,AXIOS,CLASSNAMES(CONDITION
+                                              CLASSNAME)
+                                            </span>
+                                          </li>
+                                          <li>
+                                            <span>
+                                              + BACK-END:
+                                              NODEJS(EXPRESSJS),JWT,SEQUELIZE-CLI,MULTER</span
+                                            >
+                                          </li>
+                                          <li>
+                                            <span> + DATABASE: MYSQL</span>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Experience 2 -->
+                            <div class="timeline__data data-2">
+                              <!-- Icon -->
+                              <div class="timeline__data__icon__wrapper">
+                                <i
+                                  class="fas fa-pencil-alt timeline__data__icon"
+                                ></i>
+                              </div>
+
+                              <!-- Title -->
+                              <div class="experience-wrapper-head">
+                                <h1 class="timeline__data__position">
+                                  E-Commerce API
+                                  <span class="timeline__data__time"
+                                    >2023 - now</span
+                                  >
+                                </h1>
+                              </div>
+
+                              <div class="experience-wrapper-section grid">
+                                <div class="row">
+                                  <div class="c-3 gutter">
+                                    <div class="project-overview-wrapper">
+                                      <ul>
+                                        <li>Feb,2023 - March,2023</li>
+                                        <li>Project: Personal</li>
+                                        <li>Member: 1</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                  <div class="c-8 gutter">
+                                    <div class="project-details-wrapper">
+                                      <div class="project-detail-wrapper">
+                                        <h3>
+                                          Position:Backend,Database design
+                                        </h3>
+                                        <ul>
+                                          <li>
+                                            <span>
+                                              + Description: RestfullAPI with
+                                              e-commerce website features with
+                                              MVC structure
+                                            </span>
+                                          </li>
+                                          <li>
+                                            <span>
+                                              + Features:
+                                              Authenticate/Authorize,Login,Register,Search
+                                              products/users,Upload file
+                                            </span>
+                                          </li>
+                                          <li>
+                                            <span>
+                                              + Source code:
+                                              https://github.com/tuantransn2001/e-commerce-api.git
+                                            </span>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                      <div class="project-detail-wrapper">
+                                        <h3>Technical:</h3>
+                                        <ul>
+                                          <li>
+                                            <span>
+                                              + BACK-END:
+                                              NODEJS(EXPRESSJS),JWT,SEQUELIZE-CLI,MULTER</span
+                                            >
+                                          </li>
+                                          <li>
+                                            <span> + DATABASE: MYSQL</span>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Experience 3 -->
+                            <div class="timeline__data data-3">
+                              <!-- Icon -->
+                              <div class="timeline__data__icon__wrapper">
+                                <i
+                                  class="fas fa-pencil-alt timeline__data__icon"
+                                ></i>
+                              </div>
+
+                              <!-- Title -->
+                              <div class="experience-wrapper-head">
+                                <h1 class="timeline__data__position">
+                                  Personal Music Website - ZingMp3 Clone
+                                  <span class="timeline__data__time"
+                                    >Sep,2021 - Nov,2021</span
+                                  >
+                                </h1>
+                              </div>
+
+                              <div class="experience-wrapper-section grid">
+                                <div class="row">
+                                  <div class="c-3 gutter">
+                                    <div class="project-overview-wrapper">
+                                      <ul>
+                                        <li>Sep,2021 - Nov,2021</li>
+                                        <li>Project: Personal</li>
+                                        <li>Member: 1</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                  <div class="c-8 gutter">
+                                    <div class="project-details-wrapper">
+                                      <div class="project-detail-wrapper">
+                                        <h3>Position:Frontend</h3>
+                                        <ul>
+                                          <li>
+                                            <span>
+                                              + Description: Music website with
+                                              data(songs) is stored in client
+                                              side.
+                                            </span>
+                                          </li>
+                                          <li>
+                                            <span>
+                                              + Features: Play/Pause/Next/Prev
+                                              song,Response
+                                            </span>
+                                          </li>
+                                          <li>
+                                            <span>
+                                              + Live demo:
+                                              https://tuantransn2001.github.io/ZingMp3.github.io
+                                            </span>
+                                          </li>
+                                          <li>
+                                            <span>
+                                              + Source code:
+                                              https://github.com/tuantransn2001/ZingMp3.github.io.git
+                                            </span>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                      <div class="project-detail-wrapper">
+                                        <h3>Technical:</h3>
+                                        <ul>
+                                          <li>
+                                            <span>
+                                              + FRONE-END:
+                                              HTML,CSS(SCSS),JAVASCRIPT(ECMASCRIPT
+                                              6).</span
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Experience 4 -->
+                            <div class="timeline__data data-4">
+                              <!-- Icon -->
+                              <div class="timeline__data__icon__wrapper">
+                                <i
+                                  class="fas fa-pencil-alt timeline__data__icon"
+                                ></i>
+                              </div>
+
+                              <!-- Title -->
+                              <div class="experience-wrapper-head">
+                                <h1 class="timeline__data__position">
+                                  CellphoneS UI Clone(Front-end)
+                                  <span class="timeline__data__time"
+                                    >Otc,2021 - Nov,2021</span
+                                  >
+                                </h1>
+                              </div>
+
+                              <div class="experience-wrapper-section grid">
+                                <div class="row">
+                                  <div class="c-3 gutter">
+                                    <div class="project-overview-wrapper">
+                                      <ul>
+                                        <li>Otc 21,2021 - Nov 3,2021</li>
+                                        <li>Project: Personal</li>
+                                        <li>Member: 1</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                  <div class="c-8 gutter">
+                                    <div class="project-details-wrapper">
+                                      <div class="project-detail-wrapper">
+                                        <h3>Position:Frontend</h3>
+                                        <ul>
+                                          <li>
+                                            <span>
+                                              + Description: Website with user
+                                              interface/user experience.
+                                            </span>
+                                          </li>
+                                          <li>
+                                            <span>
+                                              + Features: Responsive,Handle
+                                              Searchbar/Slider animation with
+                                              Javascript
+                                            </span>
+                                          </li>
+                                          <li>
+                                            <span>
+                                              + Live demo:
+                                              https://tuantransn2001.github.io/CellPhoneS.github.io
+                                            </span>
+                                          </li>
+                                          <li>
+                                            <span>
+                                              + Source code:
+                                              https://github.com/tuantransn2001/CellPhoneS.github.io.git
+                                            </span>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                      <div class="project-detail-wrapper">
+                                        <h3>Technical:</h3>
+                                        <ul>
+                                          <li>
+                                            <span>
+                                              +FRONT-END: HTML
+                                              5,CSS(SCSS),JAVASCRIPT(ECMASCRIPT
+                                              6)
+                                            </span>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact -->
+          <div id="contact" class="section contact grid">
+            <!-- Heading -->
+            <div class="row">
+              <div class="c-12 gutter">
+                <h1 class="section-heading contact__heading">Get in touch</h1>
+
+                <h2 class="section-title contact__title">Contact</h2>
+              </div>
+            </div>
+
+            <!-- Body -->
+            <div class="row">
+              <!-- Left -->
+              <div class="c-5 gutter m-c-12">
+                <ul class="contact__informations grid">
+                  <!-- Gmail -->
+                  <div class="row no-gutter">
+                    <div class="c-12 mt-gutter">
+                      <li class="contact__item grid">
+                        <div class="contact__icon__wrapper c-5 mt-gutter">
+                          <i class="fas fa-paper-plane contact__icon"></i>
+                        </div>
+
+                        <a
+                          href="#"
+                          class="contact__item__content c-7 mt-gutter"
+                        >
+                          tuantransn2001@gmail.com
+                        </a>
+                      </li>
+                    </div>
+                  </div>
+
+                  <!-- Address -->
+                  <div class="row no-gutter">
+                    <div class="c-12 mt-gutter">
+                      <li class="contact__item grid">
+                        <div class="contact__icon__wrapper c-5 mt-gutter">
+                          <i class="fas fa-map contact__icon"></i>
+                        </div>
+
+                        <p class="contact__item__content c-7 mt-gutter">
+                          Thủ Đức,Tp.HCM
+                        </p>
+                      </li>
+                    </div>
+                  </div>
+
+                  <!-- Phone -->
+                  <div class="row no-gutter">
+                    <div class="c-12 mt-gutter">
+                      <li class="contact__item grid">
+                        <div class="contact__icon__wrapper c-5 mt-gutter">
+                          <i class="fas fa-phone-square contact__icon"></i>
+                        </div>
+
+                        <a
+                          href="#"
+                          class="contact__item__content c-7 mt-gutter"
+                        >
+                          0364977325
+                        </a>
+                      </li>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+              <!-- Right -->
+              <div class="c-7 gutter m-c-12">
+                <form action="" class="form__group__wrapper">
+                  <div class="form__group">
+                    <input
+                      type="text"
+                      class="form__control"
+                      placeholder="Name"
+                    />
+                  </div>
+                  <div class="form__group">
+                    <input
+                      type="text"
+                      class="form__control"
+                      placeholder="Email"
+                    />
+                  </div>
+                  <div class="form__group">
+                    <input
+                      type="text"
+                      class="form__control"
+                      placeholder="Subject"
+                    />
+                  </div>
+                  <div class="form__group">
+                    <textarea
+                      name=""
+                      id=""
+                      cols="30"
+                      rows="10"
+                      class="from__control__extra"
+                      placeholder="Message"
+                    ></textarea>
+                  </div>
+
+                  <input
+                    type="submit"
+                    value="Send Message"
+                    class="form__submit"
+                  />
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- GSAP -->
+    <script src="./js/gsap-animation-framework.js"></script>
+    <!-- Reveal - ScrollReveal -->
+    <script src="./js/scroll-effect-js.js"></script>
+    <!-- My script -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>

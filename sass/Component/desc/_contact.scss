@@ -1,0 +1,88 @@
+.contact__informations{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    .contact__item{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .contact__icon__wrapper{
+            flex: 1;
+            width: 100%;
+            height: 100px;
+            background-color: $gray-1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .contact__icon{
+                font-size: 1.5rem;
+                color: $blue-2;               
+            }
+        }
+        .contact__item__content{
+            flex: 2;
+            display: inline-block;
+            align-self: center;
+            @include text-style( $fs-6 , normal , $lh-4 , $black-3 , left );
+        }
+    }
+}
+
+
+.form__group__wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-left: 85px;
+    gap: 20px;
+    .form__group{
+        width: 100%;
+        .form__control{
+            width: 100%;
+            height: 40px;
+            padding: 10px 20px;
+            background-color: $gray-1;
+            outline: none;
+            border: none;
+        }
+        .form__control::placeholder{
+            @include text-style( $fs-7 , normal , $lh-4 , $black-5 , left );
+            opacity: .6;
+        }
+        .from__control__extra{
+            width: 100%;
+            height: 130px;
+            padding: 10px 20px;
+            background-color: $gray-1;
+            outline: none;
+            border: none;
+        }
+        .from__control__extra::placeholder{
+            @include text-style( $fs-7 , normal , $lh-4 , $black-5 , left );
+            opacity: .6;
+        }
+    }
+    .form__submit{
+        @extend .section-button;
+        outline: none;
+        border: none;
+        width: 134px;
+        height: 38px;
+        padding: 8px 15px;
+        @include text-style( $fs-3 , normal , $lh-4 , $white-1 , center );
+    }
+}
+
+
+@include respond(tablet){
+    .contact__informations{
+        margin-bottom: 30px;
+    }
+    .form__group__wrapper{
+        margin-left: 0;
+        .form__group{
+            .form__control{
+                height: 60px;
+            }
+        }
+    }
+}
