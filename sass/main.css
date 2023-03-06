@@ -308,10 +308,6 @@ table {
     opacity: 1;
   }
 }
-#app {
-  padding-left: 20px;
-}
-
 .information {
   width: 300px;
   height: 100vh;
@@ -988,6 +984,10 @@ table {
   display: block;
   transition-delay: 0.5s;
 }
+.education__wrapper .education__item .euducation__item__data.active .education__item__desc a {
+  text-decoration: underline;
+  cursor: pointer;
+}
 
 .timeline__wrapper {
   position: relative;
@@ -999,7 +999,7 @@ table {
   background-color: #E6E6E6;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 20px;
 }
 .timeline__wrapper .timeline__bar::after {
   content: "";
@@ -1016,7 +1016,7 @@ table {
 .timeline__wrapper .timeline__data__list {
   position: absolute;
   top: 0;
-  left: 52.6px;
+  left: 72.6px;
 }
 .timeline__wrapper .timeline__data__list .timeline__data {
   padding: 22.5px;
@@ -1108,6 +1108,32 @@ table {
   }
   .timeline__wrapper .timeline__data__list .timeline__data .timeline__data__desc {
     font-size: 15px;
+  }
+}
+@media (max-width: 740px) {
+  .timeline__bar {
+    display: none;
+  }
+  .timeline__bar::after {
+    display: none;
+  }
+  .timeline__data__icon__wrapper {
+    display: none !important;
+  }
+  .timeline__data__list {
+    left: -80px !important;
+  }
+  .timeline__data {
+    max-width: 500px;
+  }
+  .timeline__data__position,
+  .experience-wrapper-section {
+    padding: 0 50px;
+    padding-right: 200px;
+  }
+  .experience-wrapper-section .project-details-wrapper {
+    border-left: none !important;
+    padding-left: 0 !important;
   }
 }
 .work__wrapper .work__menu {

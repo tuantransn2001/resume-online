@@ -7,7 +7,7 @@
     background-color: $gray-3;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 20px;
   }
   .timeline__bar::after {
     content: "";
@@ -24,7 +24,7 @@
   .timeline__data__list {
     position: absolute;
     top: 0;
-    left: 52.6px;
+    left: 72.6px;
     .timeline__data {
       padding: 22.5px;
       margin-bottom: 10px;
@@ -61,8 +61,6 @@
       }
 
       .experience-wrapper-section {
-        .project-overview-wrapper {
-        }
         .project-details-wrapper {
           padding-left: 20px;
           border-left: 1px dashed $black-5;
@@ -133,6 +131,35 @@
           font-size: $fs-6;
         }
       }
+    }
+  }
+}
+
+@include respond(mobile) {
+  .timeline__bar {
+    display: none;
+  }
+  .timeline__bar::after {
+    display: none;
+  }
+  .timeline__data__icon__wrapper {
+    display: none !important;
+  }
+  .timeline__data__list {
+    left: -80px !important;
+  }
+  .timeline__data {
+    max-width: 500px;
+  }
+  .timeline__data__position,
+  .experience-wrapper-section {
+    padding: 0 50px;
+    padding-right: 200px;
+  }
+  .experience-wrapper-section {
+    .project-details-wrapper {
+      border-left: none !important;
+      padding-left: 0 !important;
     }
   }
 }
